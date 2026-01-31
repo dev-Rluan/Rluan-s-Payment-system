@@ -1,14 +1,13 @@
 # 핵심 흐름 (Core Flows)
 
-## 결제 승인 흐름
+## 결제 승인 흐름(API)
 
-1. 가맹점이 승인 요청 전송
-2. Idempotency Key 검증
-3. Payment 생성 (PENDING)
-4. 외부 결제 시스템 승인 요청
-5. 승인 결과 수신
-6. 상태 전이 (APPROVED / FAILED)
-7. 이벤트 로그 기록
+1. 가맹점 결제 UI -> 가맹점 백엔드 결제요청 API 호출 → /payments/authorize (202 Accepted)
+2. 결제 요청 데이터 검증
+3. Payment 요청 데이터 저장 (PENDING)
+4. 외부 결제 시스템 승인 요청 및 가맹점에게 202 응답
+5. 가맹점이 Polling 또는 Webhook으로 최종 상태 확인
+6. 결제 상태에 따라 UI 표시
 
 ---
 

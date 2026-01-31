@@ -68,3 +68,48 @@
 - 정상/예외 흐름을 함께 고려한 설계 능력
 - 운영과 감사 관점까지 포함한 시스템 사고
 - 설계 의사결정의 근거를 설명할 수 있는 역량
+
+## ⚠️ 주의 사항
+
+이 프로젝트는 **학습 및 설계 참고 목적**으로 제공됩니다.
+
+본 저장소에 포함된 소스 코드, 다이어그램, 설계 패턴은
+결제 시스템의 구조 및 설계 개념을 설명하기 위한 것이며,
+실제 금융 거래를 처리하는 상용 결제 시스템으로 사용할 수 없습니다.
+
+특히 다음 사항을 준수해야 합니다:
+
+- 이 프로젝트는 실제 결제사(PG), 밴(VAN), 카드망 등과
+  연동되지 않습니다.
+- PCI DSS 및 실제 카드정보 처리와 관련된 법적/규제 기준을
+  충족하지 않습니다.
+- 이 코드를 사용하여 실제 카드정보를 처리, 저장, 전송해서는 안 됩니다.
+- 이 코드를 실제 결제 환경에 배포하면 법적, 규제적,
+  계약적 의무 위반이 될 수 있습니다.
+
+본 프로젝트는 **학습 자료, 아키텍처 케이스 스터디,
+개념 증명(Proof of Concept)** 용도로만 활용해 주시기 바랍니다.
+
+## ⚠️ Disclaimer
+
+This project is provided for **educational and architectural reference only**.
+
+The source code, diagrams, and design patterns in this repository are
+intended to illustrate concepts related to payment system design,
+architecture, and best practices. This project is **not** a fully
+compliant payment gateway and should **not** be used as a production
+system for handling real financial transactions.
+
+Specifically:
+
+- This project does **not** integrate with any real payment processor,
+  acquirer, or card network.
+- It does **not** comply with PCI DSS, financial regulations, or
+  industry certification standards required for handling cardholder data.
+- No actual cardholder data should be processed, stored, or transmitted
+  using this code.
+- Using this code in a real payment environment may violate legal,
+  regulatory, or contractual obligations.
+
+Use this project as a learning resource, architectural case study,
+or proof of concept, but **do not deploy it for live financial use.**
