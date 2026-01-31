@@ -1,0 +1,6 @@
+@startuml context
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+' TODO: 컨텍스트 다이어그램 정의
+
+@enduml

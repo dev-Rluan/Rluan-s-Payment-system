@@ -1,0 +1,6 @@
+@startuml state_payment
+!theme plain
+
+' TODO: 결제 상태 머신 다이어그램 정의
+
+@enduml

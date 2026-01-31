@@ -1,0 +1,6 @@
+@startuml sequence_approve
+!theme plain
+
+' TODO: 결제 승인 시퀀스 다이어그램 정의
+
+@enduml
